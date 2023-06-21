@@ -24,7 +24,7 @@ for item in list:
 
 
 
-file = open('data.json', 'w')
+file = open('/dist/data.json', 'w')
 # file.write('test')
 # file.write('\n')
 # file.write('demo')

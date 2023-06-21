@@ -16,3 +16,4 @@ RUN cat data.json
 RUN pwd
 
 RUN ls
+RUN ls /dist
