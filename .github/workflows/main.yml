@@ -1,0 +1,14 @@
+name: test
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test-job:
+    name: 测试任务
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: action-test
+        uses: shuxuecode/github-action@main
