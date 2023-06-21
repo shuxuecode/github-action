@@ -1,4 +1,6 @@
 
+import os
+
 import urllib3
 
 import json
@@ -23,6 +25,10 @@ for item in list:
     print(item['id'])
 
 
+
+
+if not os.path.exists("/dist/"):
+    os.mkdir("/dist/")
 
 file = open('/dist/data.json', 'w')
 # file.write('test')
