@@ -11,6 +11,8 @@ ADD script.py /script.py
 
 RUN python /script.py
 
+RUN cat data.json
+
 RUN pwd
 
 RUN ls
