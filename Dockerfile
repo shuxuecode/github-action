@@ -8,3 +8,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 ADD script.py /script.py
 
 CMD [ "python", "/script.py" ]
+
+RUN pwd
+
+RUN ls

@@ -2,7 +2,7 @@ name: test
 
 on:
   push:
-    branches: [ main ]
+    branches: [ python-shell ]
 
 jobs:
   test-job:
@@ -11,4 +11,4 @@ jobs:
 
     steps:
       - name: action-test
-        uses: shuxuecode/github-action@main
+        uses: shuxuecode/github-action@python-shell
