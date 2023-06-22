@@ -31,8 +31,8 @@ if not os.path.exists("/dist/"):
     os.mkdir("/dist/")
 
 
-file = open('/home/runner/work/github-action/github-action/data.json', 'w')
-# file = open('/dist/data.json', 'w')
+# file = open('/home/runner/work/github-action/github-action/data.json', 'w')
+file = open('/dist/data.json', 'w')
 # file.write('test')
 # file.write('\n')
 # file.write('demo')
