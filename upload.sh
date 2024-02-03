@@ -36,9 +36,9 @@ echo "--------------------------------------------------------------------------
 git push
 
 
-echo -e "\033[35m 结束了，3秒后关闭 \033[0m"
+echo -e "\033[35m 结束了，2秒后关闭 \033[0m"
 
-for e in $(seq 3); do
+for e in $(seq 2); do
   echo -n -e "\rplease wait $e..."
   sleep 1
 done
