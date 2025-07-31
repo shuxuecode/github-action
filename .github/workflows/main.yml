@@ -18,3 +18,5 @@ jobs:
 
     steps:
       - uses: shuxuecode/github-action@check_url
+        with:
+          TARGET_URL: ${{ secrets.TARGET_URL }}
