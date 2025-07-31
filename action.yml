@@ -7,22 +7,9 @@ inputs:
     description: "The URL to check"
     required: true
 
-jobs:
-  check_url:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check website availability
-        env:
-          TARGET_URL: ${{ inputs.TARGET_URL }}
-        run: |
-          echo "Checking URL: $TARGET_URL"
-          HTTP_STATUS=$(curl -o /dev/null -s -w "%{http_code}" $TARGET_URL)
-          if [ $HTTP_STATUS -eq 200 ]; then
-            echo "✅ The URL is reachable with HTTP status $HTTP_STATUS."
-          else
-            echo "❌ The URL is not reachable. HTTP status: $HTTP_STATUS."
-            exit 1
-          fi
+runs:
+  using: "docker"
+  image: "Dockerfile"
 
 branding:
   icon: "info"
