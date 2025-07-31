@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Check website availability
         env:
-          TARGET_URL: ${{ vars.TARGET_URL }}
+          TARGET_URL: ${{ secrets.TARGET_URL }}
         run: |
           echo "Checking URL: $TARGET_URL"
           HTTP_STATUS=$(curl -o /dev/null -s -w "%{http_code}" $TARGET_URL)
