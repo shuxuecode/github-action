@@ -1,0 +1,20 @@
+name: Waka Readme
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+#    - cron: "55 12,20-23 * * *"
+#    - cron: "5 3,12-14 * * *"  
+   - cron: "1 * * * *"  
+#    - cron: "0 17-20 * * *"
+    # - cron: "0 0-3 * * *"
+  workflow_dispatch:
+
+jobs:
+  test-job:
+    name: 测试任务
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: shuxuecode/github-action@check_url
